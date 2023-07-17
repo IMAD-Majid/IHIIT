@@ -3,8 +3,8 @@ self.addEventListener('install', event => {
     caches.open('I-HIIT').then(cache => {
       return cache.addAll([
         '/',
-        '/style.css',
-        '/main.js'
+        'style.css',
+        'main.js'
       ]);
     })
   );
