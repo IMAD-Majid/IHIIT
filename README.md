@@ -1,4 +1,4 @@
-Click on this link please to **[Test Project](https://shiny-praline-be396d.netlify.app/)**.
+Click on this link please to **[Test Project](https://shiny-praline-be396d.netlify.app/)** (psst, you can install it . . . and use it offline).
 <hr>
 
 ![start](https://github.com/IMAD-Majid/I-HIIT/assets/137281672/f656ca0d-f2af-4670-ba0d-ec5fac516bd9)
