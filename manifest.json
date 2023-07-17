@@ -1,6 +1,6 @@
 {
-  "name": "I HIIT",
-  "short_name": "I HIIT",
+  "name": "I-HIIT",
+  "short_name": "I-HIIT",
   "start_url": "https://meek-dolphin-3eb8c8.netlify.app/",
   "display": "standalone",
   "background_color": "#ffffff",
