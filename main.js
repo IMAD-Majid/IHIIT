@@ -1,3 +1,18 @@
+function randRange(minV, maxV) {
+    return parseInt(minV + (Math.random() * (maxV - minV)));
+}
+function shuffleArray(targetArr) {
+    let arrSize = targetArr.length;
+    let a, b, t, shuffles = randRange(arrSize / 2, arrSize * 10);
+    for (let i = 0; i < shuffles; i++) {
+        a = randRange(0, arrSize)
+        b = randRange(0, arrSize)
+
+        t = targetArr[a]
+        targetArr[a] = targetArr[b]
+        targetArr[b] = t
+    }
+}
 
 descriptions = {
     "Jumping Jacks":"",
@@ -67,6 +82,10 @@ secondary = [
     "V-Ups",
     "Superman Plank"
 ]
+
+// random exercises order
+shuffleArray(primary)
+shuffleArray(secondary)
 
 var exercises = [];
 completed = 0;
