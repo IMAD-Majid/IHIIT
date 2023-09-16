@@ -1,4 +1,4 @@
-Click on this link to **[test the program](https://relaxed-lollipop-5e4619.netlify.app/)** (psst, you can install it . . . and use it offline).
+Click on this link to **[test the program](https://relaxed-lollipop-5e4619.netlify.app/)**.
 <hr>
 
 ![start](https://github.com/IMAD-Majid/I-HIIT/assets/137281672/f656ca0d-f2af-4670-ba0d-ec5fac516bd9)
@@ -15,17 +15,7 @@ Click on this link to **[test the program](https://relaxed-lollipop-5e4619.netli
 
 # I-HIIT
 
-Intense 50 minutes HIIT workout that burns approximately 1000 calories
-
-A custom HIIT workout manager.
-This prototype is built on a predefined list of exercises and an interval timer.
-This is an intense HIIT workout.
-Your goal is to complete five rounds by performing each exercise each round consists of.
-Each round consists of 10 exercises.
-Each exercise lasts for 45 seconds, followed by 13 seconds of rest.
-30 seconds of rest between rounds.
-
-A list of exercises for the 50-minute intense HIIT workout without equipment, designed to burn approximately 1000 calories:
+A list of exercises:
 1. Jumping Jacks
 2. Mountain Climbers
 3. Burpees
@@ -47,7 +37,7 @@ A list of exercises for the 50-minute intense HIIT workout without equipment, de
 19. High Plank Knee to Elbow
 20. Wall Sit
 
-For every 4 exercises from the above list, an exercise from this additional list is chosen:
+List 2:
 1. Jumping Lunges
 2. Plank with Shoulder Taps
 3. Mountain Climber Twists
