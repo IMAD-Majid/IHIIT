@@ -73,13 +73,8 @@ shuffleArray(primary);
 
 var exercises = [];
 completed = 0;
-let pexercise = 0;
-for (let specialExercise = 0; specialExercise < 5; specialExercise++) {
-    for (let i = 0; i < 5; i++) {
-        exercises.push(primary[pexercise + i]);
-    }
-    pexercise += 5;
-    exercises.push(primary[specialExercise]);
+for (let selectedExercise = 0; selectedExercise < 30; selectedExercise++) {
+	exercises.push(primary[selectedExercise % 20]);
 }
 
 var btn = document.querySelector("button");
@@ -113,7 +108,7 @@ function nextExercise() {
             if (completed % 10) {
                 exerciseRest();
             } else {
-                if (completed != 50) {
+                if (completed != 30) {
                     roundRest()
                 } else {
                     var reportElms = document.querySelectorAll("#progress-container, #progress-container *");
