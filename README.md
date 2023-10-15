@@ -1,5 +1,8 @@
-Click on this link to **[test the program](https://relaxed-lollipop-5e4619.netlify.app/)**.
-<hr>
+# I HIIT
+## Link
+**[I HIIT](https://ihiit.netlify.app/)**
+
+## Screenshots
 
 ![start](https://github.com/IMAD-Majid/I-HIIT/assets/137281672/f656ca0d-f2af-4670-ba0d-ec5fac516bd9)
 <hr>
@@ -13,9 +16,18 @@ Click on this link to **[test the program](https://relaxed-lollipop-5e4619.netli
 ![complete](https://github.com/IMAD-Majid/I-HIIT/assets/137281672/6b4d6cbd-577f-43ee-8793-c606ba941ce0)
 <hr>
 
-# I-HIIT
+## About
 
-A list of exercises:
+Intense 30 minutes HIIT workout that burns approximately 500 calories
+
+This prototype is built on a predefined list of exercises and an interval timer.
+This is an intense HIIT workout.
+Your goal is to complete five rounds by performing each exercise each round consists of.
+Each round consists of 10 exercises.
+Each exercise lasts for 45 seconds, followed by 13 seconds of rest.
+30 seconds of rest between rounds.
+
+A list of exercises for the 30-minute intense HIIT workout without equipment:
 1. Jumping Jacks
 2. Mountain Climbers
 3. Burpees
@@ -37,14 +49,3 @@ A list of exercises:
 19. High Plank Knee to Elbow
 20. Wall Sit
 
-List 2:
-1. Jumping Lunges
-2. Plank with Shoulder Taps
-3. Mountain Climber Twists
-4. Single-Leg Glute Bridges
-5. Side Plank with Hip Dips
-6. Alternating Reverse Lunges
-7. Spiderman Push-ups
-8. Skater Jumps
-9. V-Ups
-10. Superman Plank

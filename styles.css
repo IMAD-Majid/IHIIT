@@ -1,0 +1,53 @@
+* {
+    background-color: black;
+    color:white;
+    font-size: 130%;
+    font-family:consolas;
+    width:100%;
+    text-align: center;
+}
+
+body{
+    margin:0 auto;
+    width:100%;
+    padding:0 2em;
+    box-sizing: border-box;
+}
+
+#progress-container {
+    padding:0.5em 0;
+}
+#workout-ui {
+    display: none;
+    padding:1.4em 0;
+    background-color: white;
+}
+#workout-ui *{
+    color:black;
+}
+
+#workout-ui.exercise, #workout-ui.exercise *{
+    background-color: white;
+}
+
+#workout-ui.rest, #workout-ui.rest *{
+    background-color: lightgreen;
+}
+
+#workout-ui.roundrest, #workout-ui.roundrest *{
+    background-color: yellow;
+}
+
+button{
+    margin-top:4em;
+    background-color: lightgreen;
+    color:black;
+    padding:0.2em 2em;
+    border-radius:1em;
+    border:0.1em solid white;
+    width:8em;
+}
+button:hover{
+    background-color: black;
+    color:lightgreen;
+}

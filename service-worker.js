@@ -1,10 +1,10 @@
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open('I-HIIT').then(cache => {
+    caches.open('IHIIT').then(cache => {
       return cache.addAll([
         '/',
-        'style.css',
-        'main.js'
+        '/styles.css',
+        '/main.js'
       ]);
     })
   );

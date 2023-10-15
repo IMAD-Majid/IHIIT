@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>WHY EXERCISE?</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="manifest" href="manifest.json">
-        <script>
-          if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-              navigator.serviceWorker.register('/service-worker.js');
+  <head>
+    <title>Why Exercise?</title>
+    <meta nam="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then((registration) => {
+              console.log(
+                "Service Worker registered with scope:",
+                registration.scope
+              );
+            })
+            .catch((error) => {
+              console.error("Service Worker registration failed:", error);
             });
-          }
-        </script>
-    </head>
-    <body>
-        <center>
-        <div id="progress-container">
-            <h2><span id="progress">0</span>/50 EXERCISES</h2>
-        </div>
-        <div id="workout-ui">
-            <h1 id="name">Exercise Name</h1>
-            <p id="timer">Timer</p>
-            <!--
+        });
+      }
+
+      // wake screen
+    </script>
+  </head>
+
+  <body>
+    <div id="progress-container">
+      <h2><span id="progress">0</span>/30 EXERCISES</h2>
+    </div>
+    <div id="workout-ui">
+      <h1 id="name">Exercise Name</h1>
+      <p id="timer">Timer</p>
+      <!--
                 <p id="description">Exercise Description</p>
             -->
-        </div>
-        <button>START</button>
-        </center>
-        <script src="main.js"></script>
-    </body>
+    </div>
+    <button>START</button>
+    <script src="main.js"></script>
+  </body>
 </html>
