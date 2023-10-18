@@ -1,7 +1,7 @@
 * {
     background-color: black;
     color:white;
-    font-size: 130%;
+    font-size: 3.5vw;
     font-family:consolas;
     width:100%;
     text-align: center;
@@ -10,7 +10,7 @@
 body{
     margin:0 auto;
     width:100%;
-    padding:0 2em;
+    padding:0;
     box-sizing: border-box;
 }
 
@@ -39,15 +39,26 @@ body{
 }
 
 button{
-    margin-top:4em;
+    width:8em;
     background-color: lightgreen;
     color:black;
+    margin-top:4em;
     padding:0.2em 2em;
     border-radius:1em;
     border:0.1em solid white;
-    width:8em;
 }
 button:hover{
     background-color: black;
     color:lightgreen;
+}
+
+a{
+    background-color: pink;
+    color: black;
+    font-size: 16px;
+    padding: 0.5em;
+    margin:1em auto;
+    display: none;
+    width:32em;
+    text-decoration:none;
 }

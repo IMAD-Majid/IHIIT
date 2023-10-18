@@ -1,4 +1,22 @@
-# IHIIT
+# I HIIT
+## Link
+**[I HIIT](https://ihiit.netlify.app/)**
+
+## Screenshots
+
+![start](https://github.com/IMAD-Majid/I-HIIT/assets/137281672/f656ca0d-f2af-4670-ba0d-ec5fac516bd9)
+<hr>
+
+![Capture](https://github.com/IMAD-Majid/I-HIIT/assets/137281672/7cd199bf-20ba-4d1d-b196-6039f722e2fb)
+<hr>
+
+![rest](https://github.com/IMAD-Majid/I-HIIT/assets/137281672/72f36064-8968-4568-8435-6a8bac6bed62)
+<hr>
+
+![complete](https://github.com/IMAD-Majid/I-HIIT/assets/137281672/6b4d6cbd-577f-43ee-8793-c606ba941ce0)
+<hr>
+
+## About
 
 Intense 30 minutes HIIT workout that burns approximately 500 calories
 
@@ -31,25 +49,3 @@ A list of exercises for the 30-minute intense HIIT workout without equipment:
 19. High Plank Knee to Elbow
 20. Wall Sit
 
-## Visuals
-
-![start](https://github.com/IMAD-Majid/I-HIIT/assets/137281672/f656ca0d-f2af-4670-ba0d-ec5fac516bd9)
-
-![Capture](https://github.com/IMAD-Majid/I-HIIT/assets/137281672/7cd199bf-20ba-4d1d-b196-6039f722e2fb)
-
-![rest](https://github.com/IMAD-Majid/I-HIIT/assets/137281672/72f36064-8968-4568-8435-6a8bac6bed62)
-
-![complete](https://github.com/IMAD-Majid/I-HIIT/assets/137281672/6b4d6cbd-577f-43ee-8793-c606ba941ce0)
-
-## Installation
-Use and install from [IHIIT](https://ihiit.netlify.app)
-
-## Usage
-Follow along with the instructions.
-
-## Roadmap
-Future release ideas:
-- Martial art moves
-
-## Project status
-Project development completed.

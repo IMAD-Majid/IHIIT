@@ -1,4 +1,11 @@
-  
+var workoutElm = document.getElementById("workout-ui");
+var exerciseNameElm = document.getElementById("name");
+var timerElm = document.getElementById("timer");
+var progressElm = document.getElementById("progress");
+var maxprogressElm = document.getElementById("max-progress");
+var reportElms = document.querySelectorAll("#progress-container, #progress-container *");
+var supportLink = document.querySelector("a");
+
 function randRange(minV, maxV) {
     return parseInt(minV + (Math.random() * (maxV - minV)));
 }
@@ -72,29 +79,26 @@ primary = [
 shuffleArray(primary);
 
 var exercises = [];
+const maxExercises = 30;
+maxprogressElm.textContent = maxExercises;
+
 completed = 0;
-for (let selectedExercise = 0; selectedExercise < 30; selectedExercise++) {
+for (let selectedExercise = 0; selectedExercise < maxExercises; selectedExercise++) {
 	exercises.push(primary[selectedExercise % 20]);
 }
 
 var btn = document.querySelector("button");
 btn.addEventListener("click", start);
 
-console.log(exercises.length)
-
-function start(e) {
-    var div = document.querySelector("#workout-ui");
-    div.style.display = "block";
-    e.target.style.display = "none";
+function start() {
+    workoutElm.style.display = "block";
+    btn.style.display = "none";
     nextExercise()
 }
 function nextExercise() {
-    var workoutElm = document.querySelector("#workout-ui");
     workoutElm.className = "exercise";
 
-    var exerciseNameElm = document.querySelector("#name");
     exerciseNameElm.textContent = exercises[completed];
-    var timerElm = document.querySelector("#timer");
     var duration = 45;
     timerElm.textContent = duration;
     var timer = setInterval(() => {
@@ -103,34 +107,29 @@ function nextExercise() {
         if (duration <= 0) {
             clearInterval(timer);
             completed++;
-            var progressElm = document.querySelector("#progress");
             progressElm.textContent = completed;
             if (completed % 10) {
                 exerciseRest();
             } else {
-                if (completed != 30) {
+                if (completed < maxExercises) {
                     roundRest()
                 } else {
-                    var reportElms = document.querySelectorAll("#progress-container, #progress-container *");
                     reportElms.forEach((elm) => {
                         elm.style.backgroundColor = "yellow";
                         elm.style.color = "black";
                     });
 
-                    var workoutElm = document.querySelector("#workout-ui");
                     workoutElm.style.display = "none";
+                    supportLink.style.display = "block";
                 }
             }
         }
     }, 1000);
 }
 function exerciseRest() {
-    var workoutElm = document.querySelector("#workout-ui");
     workoutElm.className = "rest";
 
-    var exerciseNameElm = document.querySelector("#name");
     exerciseNameElm.textContent = "REST, REST, REST, REST";
-    var timerElm = document.querySelector("#timer");
     var duration = 13;
     timerElm.textContent = duration;
     var timer = setInterval(() => {
@@ -144,12 +143,9 @@ function exerciseRest() {
 
 }
 function roundRest() {
-    var workoutElm = document.querySelector("#workout-ui");
     workoutElm.className = "roundrest";
 
-    var exerciseNameElm = document.querySelector("#name");
     exerciseNameElm.textContent = "*** ROUND " + (Math.floor(completed / 10)) + " REST ***";
-    var timerElm = document.querySelector("#timer");
     var duration = 30;
     timerElm.textContent = duration;
     var timer = setInterval(() => {

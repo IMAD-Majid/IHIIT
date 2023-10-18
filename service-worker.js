@@ -3,8 +3,7 @@ self.addEventListener('install', event => {
     caches.open('IHIIT').then(cache => {
       return cache.addAll([
         '/',
-        '/styles.css',
-        '/main.js'
+        '/*'
       ]);
     })
   );
