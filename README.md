@@ -35,7 +35,7 @@ A list of exercises for the 30-minute intense HIIT workout without equipment:
 
 
 ## Installation
-Use and install from **[I HIIT](https://ihiit.netlify.app/)**
+Use and install from **[IHIIT](https://ihiit.netlify.app/)**
 
 ## Visuals
 
