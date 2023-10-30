@@ -1,6 +1,6 @@
 # I HIIT
-## Link
-**[I HIIT](https://ihiit.netlify.app/)**
+## Installation
+Use and install from **[I HIIT](https://ihiit.netlify.app/)**
 
 ## Screenshots
 
