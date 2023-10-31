@@ -14,13 +14,13 @@ self.addEventListener('install', (event) => {
 
         '/svg icons/favorite_white_24dp.svg',
         '/svg icons/play_circle_filled_white_24dp.svg',
-/*
+
         '/gifs/Bicycle Crunches.gif',
         '/gifs/Burpees.gif',
         '/gifs/Diamond Push-ups.gif',
         '/gifs/Explosive Push-ups.gif',
         '/gifs/High Knees.gif',
-        '/gifs/Jump Squats.gif',
+        '/gifs/Jump Squat.gif',
         '/gifs/Jumping Jacks.gif',
         '/gifs/Jumping Lunges.gif',
         '/gifs/Jumping Squats.gif',
@@ -35,7 +35,6 @@ self.addEventListener('install', (event) => {
         '/gifs/Sit-ups.gif',
         '/gifs/Superman Plank.gif',
         '/gifs/Wall Sit.gif',
-*/
       ]);
     })
   );
