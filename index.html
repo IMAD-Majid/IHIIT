@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>IHIIT</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="manifest" href="manifest.json" />
-    <link rel="icon" type="image/svg" href="icon.svg">
-    <script>
-      if ("serviceWorker" in navigator) {
-          navigator.serviceWorker
-            .register("/service-worker.js")
-            .then((registration) => {
-              console.log(
-                "Service Worker registered with scope:",
-                registration.scope
-              );
-            })
-            .catch((error) => {
-              console.error("Service Worker registration failed:", error);
-            });
-		}
 
-      // wake screen
-    </script>
-  </head>
+<head>
+  <title>IHIIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/svg" href="icon.svg">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("/service-worker.js")
+        .then((registration) => {
+          console.log(
+            "Service Worker registered with scope:",
+            registration.scope
+          );
+        })
+        .catch((error) => {
+          console.error("Service Worker registration failed:", error);
+        });
+    }
 
-  <body>
-    <div id="progress-container">
-      <span id="progress-bar">
-        [<span id="progress"></span>]
-      </span>
-    </div>
-    <div id="workout-ui" class="hidden">
-      <span id="name">Exercise Name</span>
-      <img id="workout-gif" class="hidden" src="gifs/russian twists.gif">
-      <span id="timer">Timer</span>
-      <!--
+    function openFullscreen() {
+      var element = document.documentElement; // The root HTML element
+
+      if (element.requestFullscreen) {
+        element.requestFullscreen();
+      } else if (element.mozRequestFullScreen) { // Firefox
+        element.mozRequestFullScreen();
+      } else if (element.webkitRequestFullscreen) { // Chrome, Safari, and Opera
+        element.webkitRequestFullscreen();
+      } else if (element.msRequestFullscreen) { // Internet Explorer and Edge
+        element.msRequestFullscreen();
+      }
+    }
+
+    // Call the openFullscreen function to request fullscreen mode
+    openFullscreen();
+
+  </script>
+</head>
+
+<body>
+  <div id="progress-container">
+    <span id="progress-bar">
+      [<span id="progress"></span>]
+    </span>
+  </div>
+  <div id="workout-ui" class="hidden">
+    <span id="name">Exercise Name</span>
+    <img id="workout-gif" class="hidden" src="gifs/russian twists.gif">
+    <span id="timer">Timer</span>
+    <!--
                 <p id="description">Exercise Description</p>
             -->
-    </div>
-    <button><img src="svg icons/play_circle_filled_white_24dp.svg"></button>
-    <a href="https://www.github.com/IMAD-Majid" target="_blank">Support <img src="svg icons/favorite_white_24dp.svg"></a>
-    <script src="main.js"></script>
-  </body>
+  </div>
+  <button><img src="svg icons/play_circle_filled_white_24dp.svg"></button>
+  <a href="https://www.github.com/IMAD-Majid" target="_blank">Support <img src="svg icons/favorite_white_24dp.svg"></a>
+  <script src="main.js"></script>
+</body>
+
 </html>
