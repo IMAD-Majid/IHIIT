@@ -1,4 +1,5 @@
 const CACHE_VERSION = "2023-10-31 4:50 PM";
+console.log("VERSION", CACHE_VERSION);
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
