@@ -1,8 +1,8 @@
 const CACHE_VERSION = "2023-10-31 1:40 PM";
 
-self.addEventListener('install', event => {
+self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_VERSION).then(cache => {
+    caches.open(CACHE_VERSION).then((cache) => {
       return cache.addAll([
         '/',
         '/index.html',
@@ -14,7 +14,7 @@ self.addEventListener('install', event => {
 
         '/svg icons/favorite_white_24dp.svg',
         '/svg icons/play_circle_filled_white_24dp.svg',
-
+/*
         '/gifs/Bicycle Crunches.gif',
         '/gifs/Burpees.gif',
         '/gifs/Diamond Push-ups.gif',
@@ -35,6 +35,7 @@ self.addEventListener('install', event => {
         '/gifs/Sit-ups.gif',
         '/gifs/Superman Plank.gif',
         '/gifs/Wall Sit.gif',
+*/
       ]);
     })
   );
