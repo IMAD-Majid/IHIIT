@@ -1,4 +1,4 @@
-const CACHE_VERSION = "2023-11-12 4:00 PM";
+const CACHE_VERSION = "2023-11-18 2:40 PM";
 console.log("VERSION", CACHE_VERSION)
 
 self.addEventListener('install', (event) => {
