@@ -4,7 +4,7 @@
 body{
     margin:0 auto;
     padding:0;
-    margin-bottom: 8em;
+    margin-bottom: 6em;
     background-color: #333;
 }
 
@@ -22,7 +22,7 @@ div#workout-ui {
     flex-direction: column;
     align-items: center;
     padding:1.4em 0;
-    height: 70vh;
+    min-height: 70vh;
 }
 
 div#workout-ui.hidden {
@@ -61,8 +61,8 @@ span#name{
 
 
 img {
-    max-width:22em;
-    max-height:22em;
+    max-width: 22em;
+    max-height: 22em;
 }
 
 img.hidden {
@@ -78,10 +78,14 @@ button{
     padding:1.5em 5em;
     border-radius:1em;
     border:0.1em solid white;
+
+    color:white;
+    font-weight:bold;
 }
 
 button:hover{
     background-color:#4b4;
+    color:black;
 }
 
 a{
@@ -98,5 +102,7 @@ a{
     display: none;
 }
 a img{
+    width:36px;
+    height:24px;
     margin-left:1em;
 }

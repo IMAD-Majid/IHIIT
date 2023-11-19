@@ -1,5 +1,4 @@
-const CACHE_VERSION = "2023-11-18 2:40 PM";
-console.log("VERSION", CACHE_VERSION)
+const CACHE_VERSION = "2023-11-19 5:10 PM";
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -13,8 +12,7 @@ self.addEventListener('install', (event) => {
         '/manifest.json',
         '/service-worker.js',
 
-        '/svg icons/favorite_white_24dp.svg',
-        '/svg icons/play_circle_filled_white_24dp.svg',
+        'kofi_stroke_cup.svg',
 
         '/gifs/Bicycle Crunches.gif',
         '/gifs/Burpees.gif',
