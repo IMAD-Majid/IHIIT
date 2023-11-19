@@ -1,10 +1,11 @@
 * {
     font-family: sans-serif;
+    font-size: 18px;
 }
 body{
     margin:0 auto;
     padding:0;
-    margin-bottom: 6em;
+    margin-bottom: 2em;
     background-color: #333;
 }
 
@@ -105,4 +106,8 @@ a img{
     width:36px;
     height:24px;
     margin-left:1em;
+}
+
+#workout-gif {
+    margin:1em 0;
 }
